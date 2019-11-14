@@ -1,0 +1,272 @@
+@import url("//fonts.googleapis.com/css?family=Pacifico"); 
+
+body
+{
+    margin:0;
+    padding:0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#header
+{
+    display:flex;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    background: white;
+    justify-content: space-around;
+    border-bottom: 4px solid rgb(62, 171, 207);
+
+}
+
+#header-img
+{
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    margin-top: 20px;
+}
+
+ul
+{
+    list-style: none;
+    margin: 0;
+    padding:0;
+    display:flex;
+    flex-shrink: 0;
+}
+
+.nav-link
+{
+    padding: 15px;
+    margin-top: 20px;
+}
+
+a
+{
+    text-decoration: none;
+    color: rgb(170, 36, 59);
+    font-family: Pacifico;
+    font-size: 15pt;
+}
+
+a:hover
+{
+    cursor: pointer;
+    color: rgb(206, 70, 93);
+    transition: color 0.5s;
+}
+
+main
+{
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    z-index: -1;
+}
+
+#titlePhoto
+{
+    width: 100%;
+    height: 530px;
+    background: url("meditation.jpg");
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-size: 100% 100%;
+    flex-shrink: 0;
+    color: white;
+}
+
+#titleAbove
+{
+    margin-top: 30px;
+    background: rgba(35, 70, 122, 0.514);
+    font-size: 50pt;
+    letter-spacing: 1.5;
+}
+
+#titleBelow
+{
+    margin-bottom: 10px;
+    font-size: 20pt;
+}
+
+.pacifico
+{
+    font-family: Pacifico;
+    text-align: center;
+}
+
+#about
+{
+    position: relative;
+    width: 100%;
+}
+
+#about h1, #pricing h1, #contact h1
+{
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 35pt;
+    background: rgb(62, 171, 207);
+    font-family: Pacifico;
+    color:rgb(156, 28, 49);
+}
+
+#about_container
+{
+    position: relative;
+    width: 90%;
+    left: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+#about_container p
+{
+    width: 40%;
+    font-size: 20pt;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.5;
+}
+
+#differentFont
+{
+    font-family: Pacifico;
+    color: rgb(170, 36, 59);
+
+}
+
+iframe
+{
+    width: 50%;
+    margin-top: 20px;
+}
+
+#prices_container
+{
+    display:flex;
+}
+
+#prices_container img
+{
+    width: 50%;
+    opacity: 0.7;
+    margin-top: 20px;
+}
+
+#prices
+{
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+}
+
+#prices h2
+{
+    background: rgba(209, 52, 78, 0.521);
+}
+
+#prices p
+{
+    font-size: 20px;   
+}
+
+
+#questions
+{
+    text-align: center;
+}
+
+
+#question1, #question2
+{
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 20pt;
+    padding: 10px;
+    color: white;
+}
+
+#question1
+{
+    background: rgba(202, 54, 202, 0.5);
+}
+
+#question2
+{
+    background: rgba(202, 54, 91, 0.5);
+}
+
+form
+{
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    width: 80%;
+    left: 10%;
+}
+
+#email
+{
+    border: 2px solid gray;
+    height: 25px;
+    text-indent: 3px;
+    width: 30%;
+}
+#submit
+{
+    margin-top: 20px;
+    width: 30%;
+    height: 60px;
+    font-weight: bold;
+    font-size: 20pt;
+    color: white;
+    background: rgb(170, 36, 59);
+    border: 2px solid gray;
+}
+
+#submit:hover
+{
+    cursor: pointer;
+    background: rgb(110, 57, 66);
+}
+
+
+@media screen and (max-width: 900px)
+{
+
+    #about_container
+{
+    position: relative;
+    width: 90%;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+}
+#about_container p, iframe
+{
+    width: 100%;
+}
+
+#prices_container
+{
+    display:flex;
+    flex-direction: column-reverse;
+}
+
+#prices_container img, #prices
+{
+    width: 100%
+}
+
+#submit, #email
+{
+    width:auto;
+}
+
+}
